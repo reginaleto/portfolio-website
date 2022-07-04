@@ -3,32 +3,47 @@
     <head>
         <title> Home - Website Portfolio </title>
         <style>
-            .navbar nav a
+            h1
             {
-                text-align: right;
-                padding: 2px 4px;
-                display: block;
+                font-size: 55px;
+                margin: 5px 0;
+                padding: 0;
+                font-weight: normal;
             }
 
-            .home_header header h5
+            nav a
             {
-                text-align: center;
+                font-size: 20px;
+                margin-left: 20px;
+                padding: 2px 4px;
+                display: block;
             }
         </style>
     </head>
     <body>
-        <div class = "navbar">
-            <nav>
-                <a href = "index.html"> Home </a>
-                <a href = "nav/proj.html"> Projects </a>
-                <a href = "nav/exp.html"> Experience </a>
-                <a href = "src/Leto, Regina - June 2022.pdf" target = "_blank"> Resume </a>
-            </nav>
-        </div>
-        <div class = "home_header">
-            <header>
-                <h5> Welcome </h5>
-            </header>
-        </div>
+        <header>
+            <div class = "right" style = "float: right;">
+                <nav style = "list-style-type: none;">
+                    <!-- <p id = "test"></p> -->
+                    <a href = "index.html"> Home</a>
+                    <a href = "nav/proj.html"> Projects</a>
+                    <a href = "nav/exp.html"> Experience</a>
+                    <a href = "src/Leto, Regina - June 2022.pdf" target = "_blank"> Resume</a>
+                    
+                    <!--
+                    <script>
+                        const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                        const d = new Date();
+                        let day = days[d.getDay()];
+                        document.getElementById("test").innerHTML = day;
+                    </script>
+                    -->
+                </nav>
+            </div>
+            <div class = "left" style = "float: left;">
+                <h1> Regina Leto </h1>
+            </div>
+            <div class = "clear" style = "clear: both;"></div>
+    </header>
     </body>
 </html>
