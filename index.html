@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
+        <meta name = "viewport" content = "width = device-width; initial-scale=1.0"> <!-- any images need to have width set to 100% or max-width -->
         <title> Home - Website Portfolio </title>
         <style>
             h1
@@ -39,11 +40,18 @@
 
             .home_info section p
             {
-                margin-left: 375px; 
-                margin-right: 375px; 
+                padding: 0% 20%; 
+                width: 60%; 
                 line-height: 2; 
                 text-indent: 50px;
             }
+
+            @media only screen and (max-width: 620px) 
+            {
+                /* For mobile phones: */
+                .left, .home_info, .right { width: 100%;}
+            }
+            
         </style>
     </head>
     <body>
