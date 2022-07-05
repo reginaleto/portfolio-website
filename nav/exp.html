@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content = "width = device-width; initial-scale=1.0">
         <title> Experience - Website Portfolio </title>
         <style>
+            * {
+                box-sizing: border-box;
+            }
+            
              h1
             {
                 font-size: 55px;
@@ -18,11 +24,16 @@
                 padding: 2px 4px;
                 display: block;
             }
+
+            @media screen and (max-width: 600px) 
+            {
+                .exp_col { width: 100%;}
+            }
         </style>
     </head>
     <body>
         <header>
-            <div class = "right" style = "float: right;">
+            <div class = "right" style = "float: right;">Courses
                 <nav style = "list-style-type: none;">
                     <a href = "../index.html"> Home </a>
                     <a href = "proj.html"> Projects </a>
@@ -36,5 +47,37 @@
         </div>
         <div class = "clear" style = "clear: both;"></div>
         </header>
+
+        <div class = "exp_row" style = "display: flex;"> 
+            <div class = "exp_col" style = "flex: 50%;">
+                <section>
+                    <h3 style = "text-align: center;"> Employment History </h3>
+                    <p> some filler text ..... </p>
+                </section>
+            </div>
+            <div class = "exp_col" style = "flex: 50%;">
+                <section>
+                    <h3 style = "text-align: center;">Relevant Course Experience </h3>
+                    <div style = "line-height: .35;">
+                        <p> Digital Systems </p> 
+                        <h5 style = "font-style: italic; font-weight: normal;"> University and Semester </h5>
+                    </div>
+                        <p style = "text-indent: 50px;"> Major topics studied; project?; lab experience?; skills obtained/programs used in class </p>
+                    
+                    <p> Introduction to Engineering and Design </p>
+                    <p> Computer Methods in ECE </p>
+                    <p> Computer Problem Solving </p>
+                    <p> Calculus 1, 2, and 3 </p>
+                    <p> Differential Equations with Linear Algebra </p>
+                    <p> Engineering Probability and Statistics </p>
+                    <p> General Physics 1 and 2 </p>
+                    <h4 style = "text-align: center;"> Relevant Courses in Progress </h4>
+                    <p> Circuits </p>
+                    <p> Discrete Math in Computer Engineering </p>
+                    <p> Microprocessors and Embedded Systems </p>
+                    <p> Advanced Software Techniques in Computer Engineering </p>
+                </section>
+            </div>
+        </div>
     </body>
 </html>
