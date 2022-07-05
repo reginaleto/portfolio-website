@@ -3,6 +3,11 @@
     <head>
         <title> Photography - Website Portfolio </title>
         <style>
+            * 
+            {
+                box-sizing: border-box;
+            }
+
             h1
             {
                 font-size: 55px;
@@ -19,11 +24,35 @@
                 display: block;
             }
 
-            p
+            .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+            }
+
+            .column {
+            -ms-flex: 25%; /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+            }
+
+            .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+            }
+
+            @media screen and (max-width: 800px) 
             {
-                font-size: 55px; 
-                font-weight: 100;
-                text-align: center;
+                .column 
+                {
+                    -ms-flex: 50%;
+                    flex: 50%;
+                    max-width: 50%;
+                }
             }
         </style>
     </head>
@@ -34,7 +63,7 @@
                     <a href = "../index.html"> Home </a>
                     <a href = "proj.html"> Projects </a>
                     <a href = "exp.html"> Experience </a>
-                    <a href = "../src/Leto, Regina - June 2022.pdf" target = "_blank"> Resume </a>
+                    <a href = "/src/Leto, Regina - June 2022.pdf" target = "_blank"> Resume </a>
                     <a href = "photo.html"> Photography </a>
                 </nav>
             </div>
@@ -43,6 +72,62 @@
             </div>
             <div class = "clear" style = "clear: both;"></div>
         </header>
-        <p> Page Under Construction! Please check back soon. </p>
+        <p style = "font-size: 55px; font-weight: 100; text-align: center;"> Page Under Construction! Please check back soon. </p>
+            <div class = "column"> <!-- 48 total pictures; 12 pics per 4 columns -->
+                <img src = "../src/camera-pics/03Jan2022/DSCN0016.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0018.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0021.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0024.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0030.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0035.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0037.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0043.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0046.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0049.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0050.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0052.jpg" style = "width: 100%">
+            </div>
+            <div class = "column">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0053.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0054.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0057.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0058.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0060.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0062.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0064.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0073.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0074.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0077.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0079.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0083.jpg" style = "width: 100%">
+            </div>
+            <div class = "column">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0085.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/19Feb2022/DSCN0089.jpg" style = "width: 100%; transform: rotate(-90deg);">
+                <img src = "../src/camera-pics/19Feb2022/DSCN0090.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/19Feb2022/DSCN0091.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/19Feb2022/DSCN0092.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/19Feb2022/DSCN0093.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/19Feb2022/DSCN0094.jpg" style = "width: 100%; transform: rotate(-90deg);">
+                <img src = "../src/camera-pics/19Feb2022/DSCN0095.jpg" style = "width: 100%; transform: rotate(-90deg);">
+                <img src = "../src/camera-pics/19Feb2022/DSCN0096.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/19Feb2022/DSCN0097.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/19Feb2022/DSCN0098.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/19Feb2022/DSCN0099.jpg" style = "width: 100%">
+            </div>
+            <div class = "column">
+                <img src = "../src/camera-pics/19Feb2022/DSCN0100.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/05Mar2022/DSCN0101.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/05Mar2022/DSCN0102.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/05Mar2022/DSCN0103.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/05Mar2022/DSCN0104.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/05Mar2022/DSCN0105.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/05Mar2022/DSCN0106.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/05Mar2022/DSCN0107.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/05Mar2022/DSCN0109.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/05Mar2022/DSCN0109.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/05Mar2022/DSCN0110.jpg" style = "width: 100%">
+            </div>
+        </div>
     </body>
 </html>
