@@ -24,25 +24,35 @@
                 display: block;
             }
 
-            .row {
-            display: -ms-flexbox; /* IE10 */
-            display: flex;
-            -ms-flex-wrap: wrap; /* IE10 */
-            flex-wrap: wrap;
-            padding: 0 4px;
+            p
+            {
+                font-size: 40px; 
+                font-weight: 100; 
+                text-align: center;
             }
 
-            .column {
-            -ms-flex: 25%; /* IE10 */
-            flex: 25%;
-            max-width: 25%;
-            padding: 0 4px;
+            .row 
+            {
+                display: -ms-flexbox; /* IE10 */
+                display: flex;
+                -ms-flex-wrap: wrap; /* IE10 */
+                flex-wrap: wrap;
+                padding: 0 4px;
             }
 
-            .column img {
-            margin-top: 8px;
-            vertical-align: middle;
-            width: 100%;
+            .column 
+            {
+                -ms-flex: 25%; /* IE10 */
+                flex: 25%;
+                max-width: 25%;
+                padding: 0 4px;
+            }
+
+            .column img 
+            {
+                margin-top: 8px;
+                vertical-align: middle;
+                width: 100%;
             }
 
             @media screen and (max-width: 800px) 
@@ -52,6 +62,16 @@
                     -ms-flex: 50%;
                     flex: 50%;
                     max-width: 50%;
+                }
+            }
+
+            @media screen and (max-width: 600px) 
+            {
+                .column 
+                {
+                     -ms-flex: 100%;
+                    flex: 100%;
+                    max-width: 100%;
                 }
             }
         </style>
@@ -72,7 +92,8 @@
             </div>
             <div class = "clear" style = "clear: both;"></div>
         </header>
-        <p style = "font-size: 55px; font-weight: 100; text-align: center;"> Page Under Construction! Please check back soon. </p>
+        <p style = "font-size: 40px; font-weight: 100; text-align: center;"> Page Under Construction! Please check back soon. </p>
+        <div class = "row">
             <div class = "column"> <!-- 48 total pictures; 12 pics per 4 columns -->
                 <img src = "../src/camera-pics/03Jan2022/DSCN0016.jpg" style = "width: 100%">
                 <img src = "../src/camera-pics/03Jan2022/DSCN0018.jpg" style = "width: 100%">
@@ -84,10 +105,11 @@
                 <img src = "../src/camera-pics/03Jan2022/DSCN0043.jpg" style = "width: 100%">
                 <img src = "../src/camera-pics/03Jan2022/DSCN0046.jpg" style = "width: 100%">
                 <img src = "../src/camera-pics/03Jan2022/DSCN0049.jpg" style = "width: 100%">
-                <img src = "../src/camera-pics/03Jan2022/DSCN0050.jpg" style = "width: 100%">
-                <img src = "../src/camera-pics/03Jan2022/DSCN0052.jpg" style = "width: 100%">
             </div>
             <div class = "column">
+                
+                <img src = "../src/camera-pics/03Jan2022/DSCN0050.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0052.jpg" style = "width: 100%">
                 <img src = "../src/camera-pics/03Jan2022/DSCN0053.jpg" style = "width: 100%">
                 <img src = "../src/camera-pics/03Jan2022/DSCN0054.jpg" style = "width: 100%">
                 <img src = "../src/camera-pics/03Jan2022/DSCN0057.jpg" style = "width: 100%">
@@ -99,23 +121,24 @@
                 <img src = "../src/camera-pics/03Jan2022/DSCN0074.jpg" style = "width: 100%">
                 <img src = "../src/camera-pics/03Jan2022/DSCN0077.jpg" style = "width: 100%">
                 <img src = "../src/camera-pics/03Jan2022/DSCN0079.jpg" style = "width: 100%">
-                <img src = "../src/camera-pics/03Jan2022/DSCN0083.jpg" style = "width: 100%">
             </div>
             <div class = "column">
+                <img src = "../src/camera-pics/03Jan2022/DSCN0083.jpg" style = "width: 100%">
                 <img src = "../src/camera-pics/03Jan2022/DSCN0085.jpg" style = "width: 100%">
-                <img src = "../src/camera-pics/19Feb2022/DSCN0089.jpg" style = "width: 100%; transform: rotate(-90deg);">
+                <img src = "../src/camera-pics/19Feb2022/DSCN0089.jpg" style = "width: 100%">
                 <img src = "../src/camera-pics/19Feb2022/DSCN0090.jpg" style = "width: 100%">
                 <img src = "../src/camera-pics/19Feb2022/DSCN0091.jpg" style = "width: 100%">
                 <img src = "../src/camera-pics/19Feb2022/DSCN0092.jpg" style = "width: 100%">
                 <img src = "../src/camera-pics/19Feb2022/DSCN0093.jpg" style = "width: 100%">
-                <img src = "../src/camera-pics/19Feb2022/DSCN0094.jpg" style = "width: 100%; transform: rotate(-90deg);">
-                <img src = "../src/camera-pics/19Feb2022/DSCN0095.jpg" style = "width: 100%; transform: rotate(-90deg);">
+                <img src = "../src/camera-pics/19Feb2022/DSCN0094.jpg" style = "width: 100%">
+                <img src = "../src/camera-pics/19Feb2022/DSCN0095.jpg" style = "width: 100%">
                 <img src = "../src/camera-pics/19Feb2022/DSCN0096.jpg" style = "width: 100%">
                 <img src = "../src/camera-pics/19Feb2022/DSCN0097.jpg" style = "width: 100%">
                 <img src = "../src/camera-pics/19Feb2022/DSCN0098.jpg" style = "width: 100%">
-                <img src = "../src/camera-pics/19Feb2022/DSCN0099.jpg" style = "width: 100%">
+                
             </div>
             <div class = "column">
+                <img src = "../src/camera-pics/19Feb2022/DSCN0099.jpg" style = "width: 100%">
                 <img src = "../src/camera-pics/19Feb2022/DSCN0100.jpg" style = "width: 100%">
                 <img src = "../src/camera-pics/05Mar2022/DSCN0101.jpg" style = "width: 100%">
                 <img src = "../src/camera-pics/05Mar2022/DSCN0102.jpg" style = "width: 100%">
